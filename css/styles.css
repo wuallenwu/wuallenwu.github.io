@@ -1,0 +1,83 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background: #eef5f5; /* very light pastel blue */
+    color: #444; /* muted dark color for text */
+}
+
+header {
+    background: #c5dedd; /* muted pastel teal */
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+    background: #f7fbfb; /* very light pastel teal */
+}
+
+section {
+    margin: 2em 0;
+}
+
+h1, h2 {
+    margin-bottom: 0.5em;
+    color: #9db9b5; /* muted pastel green */
+}
+
+footer {
+    background: #c5dedd; /* muted pastel teal */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Hyperlink styles */
+a {
+    color: #9abec5; /* muted pastel blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eec3c7; /* muted pastel pink */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #c3bedc; /* muted pastel purple */
+}
+
+/* Specific styles for footer links */
+footer a {
+    color: #fff; /* white */
+}
+
+footer a:hover {
+    color: #9abec5; /* muted pastel blue */
+}
