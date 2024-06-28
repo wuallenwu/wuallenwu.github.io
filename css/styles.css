@@ -50,7 +50,7 @@ h1, h2 {
 
 footer {
     background: #c5dedd; /* muted pastel teal */
-    color: #fff;
+    color: #444; /* muted dark color for text */
     text-align: center;
     padding: 1em 0;
     position: absolute;
@@ -70,14 +70,58 @@ a:hover {
 }
 
 a:visited {
-    color: #c3bedc; /* muted pastel purple */
+    color: #966fd6; /* muted pastel purple */
 }
 
 /* Specific styles for footer links */
 footer a {
-    color: #fff; /* white */
+    color: #444; /* muted dark color for text */
 }
 
 footer a:hover {
     color: #9abec5; /* muted pastel blue */
+}
+
+/* Contact section styles */
+#contact {
+    padding: 2em;
+    background: #ffffff; /* white background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info a {
+    color: #444; /* dark color for better readability */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-info a i {
+    margin-right: 0.5em;
+    font-size: 1.2em; /* slightly larger icons */
+}
+
+.contact-info a:hover {
+    color: #9abec5; /* muted pastel blue */
+}
+
+/* Additional footer styling */
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em 0;
 }
