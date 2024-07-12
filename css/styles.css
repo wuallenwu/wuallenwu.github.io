@@ -6,122 +6,151 @@ body, h1, h2, p, ul {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    background: #eef5f5; /* very light pastel blue */
-    color: #444; /* muted dark color for text */
+    background: #f5f5f7; /* very light grey */
+    color: #333; /* dark grey for text */
 }
 
 header {
-    background: #c5dedd; /* muted pastel teal */
-    color: #fff;
+    background: #ffffff; /* white background */
+    color: #333; /* dark grey text */
     padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    gap: 2em;
 }
 
 nav ul li {
-    margin: 0 1em;
+    margin: 0;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
 }
 
+nav ul li a:hover {
+    color: #0071e3; /* Apple blue */
+}
+
+nav ul li a.active {
+    color: #0071e3; /* Apple blue */
+    font-weight: bold;
+}
+
+
 main {
-    padding: 2em;
-    background: #f7fbfb; /* very light pastel teal */
+    padding: 4em 1em 2em;
+    background: #f5f5f7; /* very light grey */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px; /* offset for fixed header */
 }
 
 section {
     margin: 2em 0;
+    text-align: center;
 }
 
 h1, h2 {
     margin-bottom: 0.5em;
-    color: #9db9b5; /* muted pastel green */
+    color: #333; /* dark grey */
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666; /* light grey for text */
 }
 
 footer {
-    background: #c5dedd; /* muted pastel teal */
-    color: #444; /* muted dark color for text */
+    background: #f5f5f7; /* very light grey */
+    color: #666; /* light grey text */
     text-align: center;
     padding: 1em 0;
-    position: absolute;
+    border-top: 1px solid #eaeaea;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
 
-/* Hyperlink styles */
-a {
-    color: #9abec5; /* muted pastel blue */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #eec3c7; /* muted pastel pink */
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #966fd6; /* muted pastel purple */
-}
-
-/* Specific styles for footer links */
-footer a {
-    color: #444; /* muted dark color for text */
-}
-
-footer a:hover {
-    color: #9abec5; /* muted pastel blue */
-}
-
-/* Contact section styles */
-#contact {
-    padding: 2em;
-    background: #ffffff; /* white background for contrast */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em;
-}
-
-.contact-info p {
-    margin: 0;
-}
-
-.contact-info a {
-    color: #444; /* dark color for better readability */
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.contact-info a i {
-    margin-right: 0.5em;
-    font-size: 1.2em; /* slightly larger icons */
-}
-
-.contact-info a:hover {
-    color: #9abec5; /* muted pastel blue */
-}
-
-/* Additional footer styling */
 footer p {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
     padding: 1em 0;
+}
+
+footer a {
+    color: #0071e3; /* Apple blue */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a i {
+    margin-right: 0.5em;
+}
+
+/* Hyperlink styles */
+a {
+    color: #0071e3; /* Apple blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005bb5; /* darker blue */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #4a4a4a; /* grey */
+}
+
+/* Additional footer styling */
+footer a {
+    color: #0071e3; /* Apple blue */
+}
+
+footer a:hover {
+    color: #005bb5; /* darker blue */
 }
