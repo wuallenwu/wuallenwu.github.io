@@ -18,5 +18,21 @@
     <div id="footer-placeholder"></div>
     <script src="js/loadIncludes.js"></script>
     <script src="js/navbar.js"></script>
+    <script>
+        // Redirect the GitHub Pages root to the proposal page, but keep local/dev unchanged
+        (function () {
+            try {
+                var host = window.location.hostname.toLowerCase();
+                var isUserSite = host === 'wuallenwu.github.io';
+                var path = window.location.pathname.toLowerCase();
+                // Only redirect if we're at the root or index and not already on proposal.html
+                if (isUserSite && !path.endsWith('/proposal.html')) {
+                    window.location.replace('proposal.html');
+                }
+            } catch (e) {
+                // no-op
+            }
+        })();
+    </script>
 </body>
 </html>
